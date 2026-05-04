@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | WEIR</title>
+    <style>
+        * { box-sizing: border-box; }
+        body, html { 
+            margin: 0; padding: 0; 
+            height: 100dvh; /* ใช้ dvh เพื่อให้เต็มจอมือถือพอดี */
+            width: 100%; 
+            background: #0a0a0a; 
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-card {
+            width: 85%;
+            max-width: 400px;
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #ff0000;
+            margin-bottom: 15px;
+        }
+        h1 { margin: 10px 0; color: #ff0000; font-size: 24px; }
+        p { color: #ccc; line-height: 1.6; }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn-contact {
+            display: block;
+            margin-top: 25px;
+            padding: 12px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="avatar">
+        <h1>WEIR</h1>
+        <p>Student & Developer<br>Computer Science Enthusiast</p>
+        
+        <div class="stats">
+            <div><strong>Games</strong><br>RoV / FF</div>
+            <div><strong>Focus</strong><br>IT / Dev</div>
+        </div>
+
+        <a href="#" class="btn-contact">CONTACT ME</a>
+    </div>
+</body>
+</html>
