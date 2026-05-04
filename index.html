@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>โปรไฟล์เกม</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437b1') no-repeat center center/cover;
+}
+
+/* ทำพื้นหลังมืดขึ้น */
+.overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: rgba(20,20,20,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px red;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.option {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+    <div class="box">
+        <h1>โปรไฟล์</h1>
+
+        <div class="option">
+            <input type="checkbox"> ยิงหัว
+        </div>
+        <div class="option">
+            <input type="checkbox"> วิ่งไว
+        </div>
+        <div class="option">
+            <input type="checkbox"> ออโต้ปั้มยา
+        </div>
+        <div class="option">
+            <input type="checkbox"> ออโต้กดวิ่ง
+        </div>
+        <div class="option">
+            <input type="checkbox"> ออโต้ยืนนิ่ง
+        </div>
+
+        <button onclick="alert('บันทึกเรียบร้อย!')">บันทึก</button>
+    </div>
+</div>
+</body>
+</html>
